@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const rateLimiter = require('express-rate-limit');
 const compression = require('compression');
-import { inject } from "@vercel/analytics"
+
 
 app.use(compression({
     level: 5,
