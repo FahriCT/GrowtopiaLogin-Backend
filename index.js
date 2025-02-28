@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const rateLimiter = require('express-rate-limit');
 const compression = require('compression');
+import { inject } from "@vercel/analytics"
 
 app.use(compression({
     level: 5,
@@ -59,9 +60,13 @@ app.all('/player/*', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.send('upp');
 });
 
-app.listen(5000, function () {
-    console.log('Listening on port 5000');
+app.listen(443, function () {
+    console.log('Listening on port 443);
+});
+
+app.listen(80, function () {
+    console.log('Listening on port 80);
 });
