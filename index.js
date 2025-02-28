@@ -63,10 +63,6 @@ app.get('/', function (req, res) {
     res.send('upp');
 });
 
-app.listen(443, function () {
-    console.log('Listening on port 443);
-});
-
-app.listen(80, function () {
-    console.log('Listening on port 80);
+app.listen(5000, function () {
+    console.log('Listening on port 5000);
 });
